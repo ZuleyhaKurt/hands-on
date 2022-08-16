@@ -1,0 +1,24 @@
+/* Combinators */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* .kutu p {
+    color : red;
+} */
+
+/* .kutu > p {
+    color:aqua; 
+ } */
+
+
+ /* h1 den sonraki ilk kardeş elementi seçer */
+h1 +p {
+    color: orange;
+}
+/* h1 den sonraki tüm p leri seçer  */
+h1 ~ p{
+    color: hotpink;
+}
