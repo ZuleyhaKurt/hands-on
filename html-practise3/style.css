@@ -30,3 +30,6 @@ nav.nav-top img{
 .sign-in a:hover{
     color: black;
 }
+.clearfix{
+    clear: both;
+}
