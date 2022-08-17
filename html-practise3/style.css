@@ -14,7 +14,11 @@ body{
 
 
 nav.nav-top img{
+    margin: 10px;
     width: 50px;
+    border: 1px solid red;
+    outline: 3px solid red;
+    outline-offset: 2px;
 }
 
 .sign-in{
@@ -32,4 +36,55 @@ nav.nav-top img{
 }
 .clearfix{
     clear: both;
+}
+
+.main{
+    margin: 2rem 2rem 1rem 2rem;
+    text-align: justify;
+}
+
+.nav-2{
+    background-color: #ffaa53;
+    text-align: center;
+    height: 5rem;
+
+}
+.nav-list{
+   padding: 2rem;
+   
+}
+
+
+.list-item{
+    display: inline;
+    padding: 2rem;
+    font-family:"DynaPuff", cursive;
+    font-size: 1.1rem;
+    font-weight: 500;
+  
+
+    
+}
+.list-item a {
+    text-decoration: none;
+}
+.main p{
+    font-size: 16px;
+
+}
+.slack{
+    position: fixed;
+    bottom:2rem;
+    right:3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    float: right;
+    background-color: red;
+    text-align: center;
+    padding: 0.2rem;
+    color: white;
+}
+.slack:hover{
+    color:black
 }
