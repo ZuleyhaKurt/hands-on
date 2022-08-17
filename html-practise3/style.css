@@ -82,9 +82,19 @@ nav.nav-top img{
     float: right;
     background-color: red;
     text-align: center;
-    padding: 0.2rem;
+    padding: 0.3rem;
     color: white;
 }
 .slack:hover{
     color:black
+}
+.slack svg{
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+.fa-slack{
+    border: 1px solid black;
+    width:50%;
+    height: 50%;
 }
