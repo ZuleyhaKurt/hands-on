@@ -54,12 +54,37 @@
 
 // ! DO WHİLE DÖNGÜSÜ
 
-let not1; 
-do{
-    not1= +prompt ("lütfen 0 ile 100 arasında bir not giriniz")
-    if(not1<0 || not1>100){
-        console.log("not 0 ile 100 arasında olmalıdır")
-    }
-}while(not1<0 || not1>100)
+// let not1; 
+// do{
+//     not1= +prompt ("lütfen 0 ile 100 arasında bir not giriniz")
+//     if(not1<0 || not1>100){
+//         console.log("not 0 ile 100 arasında olmalıdır")
+//     }
+// }while(not1<0 || not1>100)
 
-console.log("girdiğiniz not:",not1)
+// console.log("girdiğiniz not:",not1)
+
+
+// ! Program 0*100 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer bildi ise "Tebrikler ... denemede bildiniz" yazacaktır.
+
+let hak =5;
+const rastgele=Math.round(Math.random()*100);
+console.log(rastgele);
+let tahmin;
+do{
+    tahmin=+prompt("lütfen 0-100 arasında  bir tahmin giriniz")
+    hak-=1
+    if(tahmin===rastgele){
+        console.log(`Tebrikler ${5-hak} kere de bildiniz`)
+        break;
+    }else if(tahmin< rastgele){
+        console.log("artır")
+    }else{
+        console.log("azalt")
+    }
+
+}while(hak>0);
+
+if (tahmin !== rastgele){
+console.log("üzgünüz oyunu kaybettiniz😢")
+}
