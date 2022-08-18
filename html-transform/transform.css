@@ -1,0 +1,63 @@
+.yazi{
+    text-align: center;
+    font-size: 2rem;
+    margin : 2rem auto;
+    width: 50vw;
+}
+.yazi1{
+
+}
+.yazi2{
+background-color: tomato;
+transform: rotateY(180deg);
+}
+
+.yazi3{
+background-color: hotpink;
+transform: rotate(-45deg);
+}
+
+.yazi4{
+    background-color: indigo;
+    /* transform:scaleX(1.5); */
+}
+.yazi4:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+
+.yazi5{
+    background-color: fuchsia;
+    
+}
+.yazi5:active{
+    /* transform: scale(1.1,1.2); */
+    transform:scale(98%);
+}
+.translate{
+    background-color: gold;
+    font-weight: 800;
+    font-size: 1.1rem;
+    width: 100px;
+    height: 50px;
+    margin:10px;
+    transition: transform 1.2s, background-color 1s;
+}
+
+
+
+
+.x:hover {
+    transform: translateX(50px);
+    background-color: greenyellow;
+  }
+  .y:active {
+    transform: translateY(-50px);
+    background-color: tomato;
+  }
+  
+  .xy:active {
+    transform: translate(50px, 50px);
+    background-color: fuchsia;
+  }
+  
