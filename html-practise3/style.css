@@ -47,6 +47,8 @@ nav.nav-top img{
     background-color: #ffaa53;
     text-align: center;
     height: 5rem;
+    position: sticky;
+    top: 0;
 
 }
 .nav-list{
@@ -94,7 +96,7 @@ nav.nav-top img{
     color: white;
 }
 .fa-slack{
-    
-    width:50%;
-    height: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
 }
