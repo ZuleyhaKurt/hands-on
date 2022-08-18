@@ -1,17 +1,18 @@
 
-let sayac;
+let sayac=0;
 let total=0;
 let not1;
 let not;
 
 do{
     not=prompt("not giriniz");
+    if(not==="q"|| not==="Q"){
+        break;
+    }
     not1=Number(not);
-    sayac=sayac+1;
-    console.log(sayac);
+    sayac++;
     total=total+not1;
-    console.log(total);
-}while (not != "q")
+}while (true);
 
 let ortalama=total/sayac;
 console.log(`Sınıfın ortalaması: ${ortalama}`)
