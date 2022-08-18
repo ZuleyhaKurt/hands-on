@@ -66,4 +66,22 @@ transform: rotate(-45deg);
     transform: translate(50px, 50px);
     background-color: fuchsia;
   }
-  
+  .btn-div{
+    text-align: center;
+  }
+  .btn{
+    padding: 1rem;
+    width: 5rem;
+    background-color: goldenrod;
+    border: none;
+    transition: background-color 0.5, color 0.5s;
+  }
+
+  .btn:hover{
+    background-color: tomato;
+    color:white;
+  }
+
+  .btn:active{
+    transform: scale(95%);
+  }
