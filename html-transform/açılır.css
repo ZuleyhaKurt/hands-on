@@ -1,0 +1,51 @@
+.menu{
+    width: 20vw;
+    height: 650px;
+    border: 1px solid red;
+    margin:0;
+    padding:0;
+    display: none;
+}
+
+
+.head{
+    background-color: bisque;
+    height: 10%;
+    text-align: center;
+    width: 20vw;
+    border: 1px solid red;
+    position: relative;
+    padding-top: 2rem;
+    
+    
+    
+}
+.menu_1{
+    border: 1px solid red;
+    
+    
+}
+
+
+.list{
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    text-align: center;
+    padding: 0;
+    
+}
+.alt{
+    background-color: brown;
+    height: 90%;
+    padding-top: 5rem;
+}
+    
+
+  .ikon{
+    border: 1px solid red;
+    position: absolute;
+    right: 5px;
+  }  
