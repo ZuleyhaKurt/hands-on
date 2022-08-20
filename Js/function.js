@@ -50,9 +50,10 @@ const buyukBul= function(n1,n2,n3){
 
 
 
-const n1 = +prompt("Sayi1:");
-const n2 = +prompt("Sayi2:");
-const n3 = +prompt("Sayi3:");
+// const n1 = +prompt("Sayi1:");
+// const n2 = +prompt("Sayi2:");
+// const n3 = +prompt("Sayi3:");
 
-console.log(`Girilen sayıların en buyugu ${buyukBul(n1,n2,n3)}`)
+// console.log(`Girilen sayıların en buyugu ${buyukBul(n1,n2,n3)}`)
+console.log(`Girilen sayıların en buyugu ${buyukBul(-8,-9,-1)}`)
 
