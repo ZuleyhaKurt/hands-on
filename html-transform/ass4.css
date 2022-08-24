@@ -47,4 +47,8 @@
 .main a{
     padding: 2rem;
     text-decoration: none;
+    color: black
+}
+.contatiener:hover a:hover{
+    color: white;
 }
