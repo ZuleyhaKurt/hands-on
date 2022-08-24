@@ -1,0 +1,50 @@
+.contatiener{
+    width: 20%;
+    height: 40rem;
+    border: 1px solid red;
+    margin-left: -18%;
+    transition: all 1.5s;
+}
+
+.contatiener:hover{
+    margin-left: 0;
+    
+
+}
+
+.contatiener:hover i{
+    rotate: 180deg;
+}
+
+.head{
+    border: 1 px solid red;
+    height: 5rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.head i {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 1rem;
+    top :2rem;
+}
+.main{
+    border: 1px solid red;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+
+    
+}
+.main a{
+    padding: 2rem;
+    text-decoration: none;
+}
