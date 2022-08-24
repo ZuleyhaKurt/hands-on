@@ -47,3 +47,4 @@ console.log(word.includes("to be", 13)); //? true
 console.log(word.indexOf("be"))
 console.log(word.lastIndexOf("be"))
 console.log(word.lastIndexOf("BE"))
+
