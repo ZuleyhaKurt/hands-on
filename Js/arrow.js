@@ -27,3 +27,15 @@ console.log(sayi1)
 }
 fonks1()
 console.log(sayi1++)
+
+// ----------
+
+let sayi2= 7;
+console.log(sayi2);
+
+const fonks2=()=>{
+    let sayi2=11;
+    console.log(sayi2);
+};
+fonks2();
+console.log(sayi2++)
