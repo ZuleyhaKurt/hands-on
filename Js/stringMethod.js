@@ -43,3 +43,7 @@ console.log(word.includes("to be", 13)); //? true
 
 //! NOT: case insentive kullanmak icin str baslangicta kucuk veya
 //! buyuk harfe cevirilerek arama yapilabilir.
+
+console.log(word.indexOf("be"))
+console.log(word.lastIndexOf("be"))
+console.log(word.lastIndexOf("BE"))
