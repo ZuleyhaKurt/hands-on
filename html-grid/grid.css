@@ -26,7 +26,29 @@
   
 .c6{
     justify-self: center;
+    width: 6rem;
+    margin-top: 2rem;
   }
   .c11{
     align-self: center;
+  }
+  .c1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: coral;
+  }
+
+  .c4{
+    grid-row-start: 2;
+    grid-row-end:4 ;
+    background-color: crimson;
+
+  }
+
+  .c8{
+    background-color: darkgoldenrod;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:5;
   }
