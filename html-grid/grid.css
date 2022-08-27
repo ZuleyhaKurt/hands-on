@@ -18,5 +18,15 @@
   .content {
     background-color: lightcyan;
     /* border: 1px solid red; */
+    border:1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
+.c6{
+    justify-self: center;
+  }
+  .c11{
+    align-self: center;
+  }
