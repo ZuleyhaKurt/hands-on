@@ -1,0 +1,65 @@
+@import "theme.css";
+
+
+*{
+    font-family: var(--ff-monteserrat);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    
+   
+}
+ul{
+    display: flex;
+}
+
+.left img{
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+.left{
+background-color: var(--gri-8);
+width: 33%;
+height: 5vh;
+
+
+}
+
+.right{
+    background-color: var(--mavi-7);
+   width: 33%;
+   height: 5vh;
+   display: flex;
+justify-content: right;
+align-items: center;
+
+}
+.right .fab{
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.nav{
+background-color: var(--mavi-10);
+width: 34%;
+height: 6vh;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0.5rem;
+}
+.list-item{
+    padding: 1rem;
+}
