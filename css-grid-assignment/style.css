@@ -1,29 +1,55 @@
+*{
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    
+    width: 100%;
+    display: flex;
+    
+  
+}  
+.row{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
 .col1{
     width: 8.333333%;
+  
+
 }
 .col2{
     width: 16.666667%;
 }
 .col3{
     width: 25%;
+ 
 }
 .col4{
     width: 33.333333%;
+  
 }
 .col5{
     width: 41.666667%;
 }
 .col6{
     width: 50%;
+   
 }
 .col7{
     width: 58.333333%;
 }
 .col8{
-    width: 66.666667%;;
+    width: 66.666667%;
 }
 .col9{
-    width: 75%;
+    
+    padding: 1rem;
 }
 .col10{
     width: 83.333333%;
@@ -32,5 +58,55 @@
     width: 91.666667%;
 }
 .col12{
+    
     width: 100%;
+}
+.first{
+  
+}
+.second{
+   
+}
+.third{
+   
+}
+.fourth{
+   
+}
+.fifth{
+    
+}
+.logo{
+    background-color: greenyellow;
+    padding: 1rem;
+    border: 1px solid grey;
+}
+.menu{
+    background-color:turquoise;
+    padding: 1rem;
+    border: 1px solid grey;
+}
+
+.banner{
+    background-color: red;
+    padding: 4rem;
+    border: 1px solid grey;
+}
+
+.bölüm1 , .bölüm2 , .bölüm3{
+    background-color: green;
+    height: calc(100vh - 21rem) ;
+    border: 1px solid grey;
+
+}
+
+.bölüm4, .bölüm5 ,.bölüm6{
+    background-color: orange;
+    padding: 1rem;
+    border: 1px solid grey;
+}
+.footer{
+    padding: 2rem;
+    background-color: pink;
+    border: 1px solid grey;
 }
