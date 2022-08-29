@@ -31,3 +31,5 @@ console.log(isimler.at(-1))
 
 //--------------------------
 
+isimler[1]="Saffet"
+console.log(isimler)
