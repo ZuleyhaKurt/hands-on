@@ -77,3 +77,13 @@ console.log(isimler) //* ASCII tablosuna göre sıralar
 
 sayilar.sort((a,b)=> a-b)
 console.log(sayilar)
+
+//* fill()
+
+const array1=[1,2,3,4]
+array1.fill(0)
+console.log(array1)
+
+array1.fill(1,2,4)
+console.log(array1)
+
