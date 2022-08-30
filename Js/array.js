@@ -68,7 +68,7 @@ console.log(arabalar)
 
 //? sort
 
-const sayilar=[2,3,1,5,7,6]
+const sayilar=[2,3,1,5,7,2,6]
 sayilar.sort()
 console.log(sayilar)
 
@@ -87,3 +87,30 @@ console.log(array1)
 array1.fill(1,2,4)
 console.log(array1)
 
+console.log(sayilar.includes(5))
+
+console.log(sayilar.indexOf(2))
+console.log(sayilar.lastIndexOf(2))
+
+console.log(sayilar.join(",")) // sayiların orjinalini bozmaz 
+
+console.log(sayilar.join())
+
+const arabalar1=["BMW","Mercedes","Fiat","Anadol"]
+
+const yeniarabalar= arabalar1.slice(2)
+console.log(yeniarabalar)
+
+
+const yazilar=["Bugün","hava","çok","güzel"]
+const numbersarr=[1,2,3,4]
+const combin=yazilar.concat(numbersarr,"aslında ", "çok","sıcak")
+console.log(combin)
+
+ const yasArray=[18,22,24,78,81]
+ const check=yasArray.every((yas) => yas>=18);
+ check ? console.log("herkes 18 den büyük") :console.log("küçükler de var")
+
+
+ const buyuk80=yasArray.some((yas) => yas >= 80)
+ console.log(buyuk80)
