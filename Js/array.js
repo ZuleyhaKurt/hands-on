@@ -120,4 +120,4 @@ console.log(combin)
  const indis=yasArray.find((yas) => yas >=30)
  console.log(indis)
 
- 
+ findIndex
