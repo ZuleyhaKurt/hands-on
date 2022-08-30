@@ -43,3 +43,37 @@ console.log(yas55)
 kisiler[5][1]--;
 console.log(kisiler)
 
+const arabalar=["BMW","Mercedes","Fiat"]
+
+arabalar.pop()
+console.log(arabalar)
+
+arabalar.push("Citroen")
+console.log(arabalar)
+
+arabalar.unshift("Audi")
+console.log(arabalar)
+
+arabalar.shift()
+console.log(arabalar)
+
+arabalar.splice(1,0,"passat")
+console.log(arabalar)
+
+arabalar.splice(3,1,"Honda")
+console.log(arabalar)
+
+arabalar.reverse()
+console.log(arabalar)
+
+//? sort
+
+const sayilar=[2,3,1,5,7,6]
+sayilar.sort()
+console.log(sayilar)
+
+isimler.sort()
+console.log(isimler) //* ASCII tablosuna göre sıralar
+
+sayilar.sort((a,b)=> a-b)
+console.log(sayilar)
