@@ -33,3 +33,13 @@ console.log(isimler.at(-1))
 
 isimler[1]="Saffet"
 console.log(isimler)
+
+const yaslar=[22,44,55]
+const kisiler=["Ahmet","Can",2022,2022-1990,true,yaslar]
+
+const yas55=kisiler[5][2]
+console.log(yas55)
+
+kisiler[5][1]--;
+console.log(kisiler)
+
