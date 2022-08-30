@@ -114,3 +114,10 @@ console.log(combin)
 
  const buyuk80=yasArray.some((yas) => yas >= 80)
  console.log(buyuk80)
+
+ const names = ["Ahmet","Can","Mustafa ","Naime"]
+
+ const indis=yasArray.find((yas) => yas >=30)
+ console.log(indis)
+
+ 
