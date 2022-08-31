@@ -17,3 +17,63 @@ dizilereayır(dizi);
 console.log(negatifler)
 console.log(pozitifler)
 console.log(dizi)
+
+const notlar=[55,77,23,89,100];
+let toplam=0
+for(let i=0; i<notlar.length;i++){
+    toplam+= notlar[i];
+    
+}
+console.log(toplam/ notlar.length)
+///
+///
+///
+//
+
+
+const ogrenciler = [
+    "ahmet",
+    "mehmet",
+    "ismet",
+    "ahmet",
+    "can",
+    "mehmet",
+    "cem",
+  ];
+// const findStudents=(arr,search)=>{
+//     let counter=0; 
+//     for (let i in arr ){
+//         if(search=== arr[i]){
+//             counter++
+//         }
+//     }
+//     if(counter===0){
+//         return`${search} can not be found`;
+//     }
+//     else{
+//         return`${search} found ${counter} times`
+//     }
+
+// }
+// const name= prompt("Lutfen bir isim giriniz").toLowerCase()
+// console.log(findStudents(ogrenciler,name))
+
+const findStudents=(arr,search)=>{
+    let counter=0; 
+    for (let i in arr ){
+        if(search=== arr[i]){
+            counter++
+        }
+    }
+   return !counter ? `${search} can not be found` :` ${search} found ${counter} times`
+    
+}
+const name= prompt("Lutfen bir isim giriniz").toLowerCase()
+console.log(findStudents(ogrenciler,name))
+
+  
+  
+  
+  
+  
+  
