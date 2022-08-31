@@ -60,10 +60,14 @@ const ogrenciler = [
 
 const findStudents=(arr,search)=>{
     let counter=0; 
-    for (let i in arr ){
-        if(search=== arr[i]){
-            counter++
-        }
+    for (let item of arr ){
+        // if(search=== item){
+        //     counter++
+        // }
+
+        // search=== item ? counter++: null
+        search=== item && counter++
+
     }
    return !counter ? `${search} can not be found` :` ${search} found ${counter} times`
     
