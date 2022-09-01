@@ -79,3 +79,11 @@ let names =["ayşe","Mustafa","Züleyha"];
 const uppernames= names.map((name)=> name.toUpperCase())
 console.log(uppernames,names)
 console.log(names.map((name)=>name.toUpperCase()))
+
+////
+const euro=18.23
+const dolar=18.19
+const tlPrices=[100,150,100,50,80];
+
+const euroPrices= tlPrices.map((tl)=>(tl/euro).toPrecision(3))
+console.log(euroPricesayse)
