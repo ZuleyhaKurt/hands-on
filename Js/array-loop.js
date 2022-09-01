@@ -75,9 +75,7 @@ const findStudents=(arr,search)=>{
 const name= prompt("Lutfen bir isim giriniz").toLowerCase()
 console.log(findStudents(ogrenciler,name))
 
-  
-  
-  
-  
-  
-  
+let names =["ayşe","Mustafa","Züleyha"];
+const uppernames= names.map((name)=> name.toUpperCase())
+console.log(uppernames,names)
+console.log(names.map((name)=>name.toUpperCase()))
