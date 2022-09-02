@@ -118,5 +118,20 @@ header{
         border-color: green;
     }
 }
-
+$textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
+footer{
+    .socials-icons{
+        display: flex;
+        height: 10rem;
+    
+    @for $i from 1 through 5{
+        .social#{$i}{
+            width: 20%;
+            background-color: lighten(rgba(11,128,229,0.600),$i*5);
+            font-size: $i* 1rem;
+            color: nth($textColor,$i);
+        }
+    }
+}
+}
 
