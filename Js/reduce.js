@@ -17,3 +17,34 @@ const worker={
 console.log(worker);
 console.log(worker.job)
 console.log(worker["language"])
+
+worker["language"].forEach((l)=>console.log(l))
+
+worker.dob="1990"
+console.log(worker)
+worker.email="can@gmail.com"
+
+
+console.log(worker.language[2])
+
+worker["salary"]=1.1 * worker.salary
+console.log(worker)
+
+const person = worker
+console.log(person)
+person.dob=2000
+
+console.log(person)
+console.log(worker)
+
+const personel={
+    ad:"Can",
+    surname:"Canan",
+    age:33,
+    job :"developer",
+    salary:"140000",
+    drivingLicense:true,
+    calculateAge :function (){
+        return new Date().getFullYear()- this.dob
+    }
+}
