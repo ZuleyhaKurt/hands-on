@@ -40,11 +40,15 @@ console.log(worker)
 const personel={
     ad:"Can",
     surname:"Canan",
+    dob:1990,
     age:33,
     job :"developer",
     salary:"140000",
     drivingLicense:true,
     calculateAge :function (){
-        return new Date().getFullYear()- this.dob
+        return new Date().getFullYear()- this.dob;
     }
+     
 }
+
+console.log(personel.calculateAge())
