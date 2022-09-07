@@ -1,74 +1,109 @@
-// //! ARRAY SORT
+// // //! ARRAY SORT
 
-// const find=(arr,n) => {
-//     if(n > arr.length){
-//         console.log("out of range")
-//     }
-//     else{
-//         let newArr=arr.sort(function(a, b){return a-b})
-//         console.log(newArr)
-//         console.log(newArr[n-1])
-//     }
-// }
-// let array=[3,9,17,56,88,92,75,6,11,67]
-// // let number =+prompt("enter a number ");
-// find(array,2)
-
-// ///************ */
-// /******* */
-// //******** */
-// //! SSN VALİDATOR
-// // const validator=(ssn)=>{
-// //     if(ssn.length!=11){
-// //         console.log("it's not valid")
+// // const find=(arr,n) => {
+// //     if(n > arr.length){
+// //         console.log("out of range")
 // //     }
-// //     else if (ssn[3]!="-" && ssn[6]!=="-"){
-// //         console.log("it's not valid")
+// //     else{
+// //         let newArr=arr.sort(function(a, b){return a-b})
+// //         console.log(newArr)
+// //         console.log(newArr[n-1])
 // //     }
-// //     else if(ssn.splice(0,3))
 // // }
+// // let array=[3,9,17,56,88,92,75,6,11,67]
+// // // let number =+prompt("enter a number ");
+// // find(array,2)
 
-// // let ssn="268-26-3556"
-// // let newSsn=ssn.split("")
-// // console.log(newSsn)
-// // validator(newSsn)
-// // // const first= newSsn.splice(0,3)
-// // // console.log(first)
-// // // const second=newSsn.splice(1,2)
-// // // console.log(second)
-// // // const third= newSsn.splice(2,5)
-// // // console.log(third)
+// // ///************ */
+// // /******* */
+// // //******** */
+// // //! SSN VALİDATOR
+// // // const validator=(ssn)=>{
+// // //     if(ssn.length!=11){
+// // //         console.log("it's not valid")
+// // //     }
+// // //     else if (ssn[3]!="-" && ssn[6]!=="-"){
+// // //         console.log("it's not valid")
+// // //     }
+// // //     else if(ssn.splice(0,3))
+// // // }
+
+// // // let ssn="268-26-3556"
+// // // let newSsn=ssn.split("")
 // // // console.log(newSsn)
+// // // validator(newSsn)
+// // // // const first= newSsn.splice(0,3)
+// // // // console.log(first)
+// // // // const second=newSsn.splice(1,2)
+// // // // console.log(second)
+// // // // const third= newSsn.splice(2,5)
+// // // // console.log(third)
+// // // // console.log(newSsn)
 
-// // 
-// let arr=["285","12","2565"]
-// console.log(arr[0].length)
+// // // 
+// // let arr=["285","12","2565"]
+// // console.log(arr[0].length)
 
 
-const validator=(arr)=> {
-    let newarray=arr.split("")
-    let newarray2=arr.split("-")
-    console.log(newarray)
-    console.log(newarray2)
+// const validator=(arr)=> {
+//     let newarray=arr.split("")
+//     let newarray2=arr.split("-")
+//     console.log(newarray)
+//     console.log(newarray2)
 
    
-       if(isNaN( +newarray2[0]) || isNaN( +newarray2[1]) || isNaN(+newarray2[2])){
-        console.log("this is invalid")
-       }
+//        if(isNaN( +newarray2[0]) || isNaN( +newarray2[1]) || isNaN(+newarray2[2])){
+//         console.log("this is invalid")
+//        }
     
-        else if(newarray.length !=11){
-            console.log("this enter is an  invalid")
-        }
-        else if (newarray[3]!=="-" && newarray[6]!=="-"){
-            console.log("this enter is an  invalid")
-        }
+//         else if(newarray.length !=11){
+//             console.log("this enter is an  invalid")
+//         }
+//         else if (newarray[3]!=="-" && newarray[6]!=="-"){
+//             console.log("this enter is an  invalid")
+//         }
         
-        else if (newarray2[0]==="000" || newarray2[0]==="666" || +newarray2[0]>900 ){
-            console.log("this enter is an  invalid")
-        }
-        else {                                                                                                       console.log("your enter is valid, congrats")
-        }  
-}
+//         else if (newarray2[0]==="000" || newarray2[0]==="666" || +newarray2[0]>900 ){
+//             console.log("this enter is an  invalid")
+//         }
+//         else {                                                                                                       console.log("your enter is valid, congrats")
+//         }  
+// }
 
-let array="268-55-3466"
-validator(array)
+// let array="268-55-3466"
+// validator(array)
+
+// const noRepeat=(str)=>{
+//     let arr=[...str]
+//     const newarray=[]
+//     newarray.push(arr[0])
+//     for(i=1; i<arr.length; i++){
+//         if (arr[i]!==arr[i-1]){
+//             newarray.push(arr[i])
+//         }
+//     }console.log(newarray)
+// }
+// noRepeat("AAABBBCCDDDD")
+// noRepeat([1,1,1,2,2,3,4,5])
+
+
+const noRepeat=(str)=>{
+    return [...str].filter((el,i,arr)=> el!==arr[i-1])
+   
+    newarray.push(arr[0])
+    for(i=1; i<arr.length; i++){
+        if (arr[i]!==arr[i-1]){
+            newarray.push(arr[i])
+        }
+    }console.log(newarray)
+}
+console.log( noRepeat("AAABBBCCDDDD"))
+console.log( noRepeat([1,1,1,2,2,3,4,5]))
+
+
+const obja={a:10, b:20, c:30}
+
+function combine (){
+
+}
+console.log(combine(objA,objB,objC))
