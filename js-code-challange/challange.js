@@ -179,8 +179,33 @@
 //     a.push(b[i])
 
 // }
+// b.map(c=>a.push(c))
 // console.log(a.sort((a,b)=>a-b))
 // }
 
 // order([2,4,8],[3,7,10])
 //***************************************
+//! cc1 /////////////
+// const reverse=(str)=>{
+// let newstr="";
+// for(let i=str.lenght -1;i >= 0; i--){
+//     newstr=newstr + str[i];
+// }
+// return newstr;
+// }
+// const value="ayse"
+// console.log(value[2])
+//  const result=reverse(value)
+//  console.log(result)
+
+//! ******************************
+const reverseWord=(str)=>{
+let newstr1=str.split(" ")
+let newstr2="";
+for(let i=newstr1.lenght - 1;i >= 0; i--){
+        newstr2=newstr2 +" "+ newstr1[i];
+}
+console.log(newstr2)
+}
+const value="seviyorum seni Mustafa'cım"
+reverseWord(value)
