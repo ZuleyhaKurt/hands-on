@@ -87,25 +87,88 @@
 // noRepeat([1,1,1,2,2,3,4,5])
 
 
-const noRepeat=(str)=>{
-    return [...str].filter((el,i,arr)=> el!==arr[i-1])
+// const noRepeat=(str)=>{
+//     return [...str].filter((el,i,arr)=> el!==arr[i-1])
    
-    newarray.push(arr[0])
-    for(i=1; i<arr.length; i++){
-        if (arr[i]!==arr[i-1]){
-            newarray.push(arr[i])
-        }
-    }console.log(newarray)
+//     newarray.push(arr[0])
+//     for(i=1; i<arr.length; i++){
+//         if (arr[i]!==arr[i-1]){
+//             newarray.push(arr[i])
+//         }
+//     }console.log(newarray)
+// }
+// console.log( noRepeat("AAABBBCCDDDD"))
+// console.log( noRepeat([1,1,1,2,2,3,4,5]))
+
+
+// const obja={a:10, b:20, c:30}
+
+// function combine (){
+
+// }
+// console.log(combine(objA,objB,objC))
+
+
+const cover=(s) => {
+let sayi=0;
+let sonuc="";
+sayi=Math.floor((s/1000))
+switch (sayi)
+{
+case 1: sonuc+= "M"; s = s % 1000; break;
+case 2: sonuc+= "M";sonuc+= "M" ; s= s%1000; break;
+case 3: sonuc+= "M";sonuc+= "M" ;sonuc+= "M" ; s= s%1000; break;
+default: break;
 }
-console.log( noRepeat("AAABBBCCDDDD"))
-console.log( noRepeat([1,1,1,2,2,3,4,5]))
 
+sayi = Math.floor(s/100);
 
-const obja={a:10, b:20, c:30}
+switch (sayi)
+{
+case 1: sonuc+= "C"; s= s%100; break;
+case 2: sonuc+= "C"; sonuc+= "C" ;s= s%100; break;
+case 3: sonuc+= "C"; sonuc+= "C" ;sonuc+= "C" ;s= s%100; break;
+case 4: sonuc+= "C";sonuc+="D"; s= s%100; break;
+case 5: sonuc+= "D"; s= s%100; break;
+case 6: sonuc+= "D";sonuc+= "C" ; s= s%100; break;
+case 7: sonuc+= "D";sonuc+= "C" ;sonuc+= "C" ; s= s%100; break;
+case 8: sonuc+= "D";sonuc+= "C" ;sonuc+= "C" ;sonuc+= "C" ; s= s%100; break;
+case 9: sonuc+= "C";sonuc+= "M" ; s= s%100; break;
+default: break;
+}
 
-function combine (){
+sayi = Math.floor(s / 10);
+
+switch (sayi)
+{
+case 1: sonuc+= "X"; s= s%10; break;
+case 2: sonuc+= "X"; sonuc+="X"; s= s%10; break;
+case 3: sonuc+= "X";sonuc+= "X"; sonuc+= "X"; s= s%10; break;
+case 4: sonuc+= "X"; sonuc+="L"; s= s%10; break;
+case 5: sonuc+= "L"; s= s%10; break;
+case 6: sonuc+= "L"; sonuc+="X"; s= s%10; break;
+case 7: sonuc+= "L";sonuc+= "X"; sonuc+= "X"; s= s%10; break;
+case 8: sonuc+= "L";sonuc+= "X"; sonuc+= "X";sonuc+="X" ; s= s%10; break;
+case 9: sonuc+= "X"; sonuc+="C"; s= s%10; break;
+default: break;
+}
+
+switch (s)
+{
+case 1: sonuc+= "I"; s= s%10; break;
+case 2: sonuc+= "I";sonuc+= "I" ; s= s%10; break;
+case 3: sonuc+= "I";sonuc+= "I" ;sonuc+= "I" ; s= s%10; break;
+case 4: sonuc+= "I";sonuc+= "V" ; s= s%10; break;
+case 5: sonuc+= "V"; s= s%10; break;
+case 6: sonuc+= "V"; sonuc+= "I" ;s= s%10; break;
+case 7: sonuc+= "V"; sonuc+= "I" ;sonuc+= "I" ;s= s%10; break;
+case 8: sonuc+= "V"; sonuc+= "I" ;sonuc+= "I" ;sonuc+= "I" ;s= s%10; break;
+case 9: sonuc+= "I";sonuc+= "X" ; s= s%10; break;
+default: break;
+}
+
+return sonuc;
 
 }
-console.log(combine(objA,objB,objC))
 
-
+console.log(cover(1125))
