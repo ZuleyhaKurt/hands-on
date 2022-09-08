@@ -108,7 +108,7 @@
 // }
 // console.log(combine(objA,objB,objC))
 
-
+//! ROMAN RAKAMLARI
 // const cover=(s) => {
 // let sayi=0;
 // let sonuc="";
@@ -173,6 +173,7 @@
 
 // console.log(cover(1125))
 //**********************
+//! 2 ARRAY CONCANT AND SORT
 // const order=(a,b) => {
 // for(i=0;i<b.length;i++){
 //     a.push(b[i])
