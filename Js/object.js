@@ -27,4 +27,42 @@ console.log(teamUnder22)
 const avgAges= team.reduce((sum,person)=> sum +=person.age ,0) / team.length;
 console.log(avgAges)
 
+const car={
+    name:"BMW",
+    model:"2000",
+    engine:1.6,
+    colors:["blue","red"]
+}
+const name1=car.name
+const model1=car["model"]
+const{name,model,engine}=car;
+console.log(name,model,engine,colors)
 
+//* ======================================================
+//*  DESTRUCTURING (OBJECT)
+//* ======================================================
+
+//* EXAMPLE: NESTED
+const cars = {
+  car1: {
+    name: "BMW",
+    model: 1990,
+    engine: 1.6,
+  },
+  car2: {
+    name: "Mercedes",
+    model: 2022,
+    engine: 2.0,
+  },
+};
+
+
+//* ======================================================
+//*  DESTRUCTURING (ARRAY)
+//* ======================================================
+//*======================================================
+//*  REST (...)
+//* ======================================================
+//*======================================================
+//*  SPREAD (...)
+//* ======================================================

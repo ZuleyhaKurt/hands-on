@@ -107,3 +107,5 @@ function combine (){
 
 }
 console.log(combine(objA,objB,objC))
+
+
