@@ -109,66 +109,77 @@
 // console.log(combine(objA,objB,objC))
 
 
-const cover=(s) => {
-let sayi=0;
-let sonuc="";
-sayi=Math.floor((s/1000))
-switch (sayi)
-{
-case 1: sonuc+= "M"; s = s % 1000; break;
-case 2: sonuc+= "M";sonuc+= "M" ; s= s%1000; break;
-case 3: sonuc+= "M";sonuc+= "M" ;sonuc+= "M" ; s= s%1000; break;
-default: break;
-}
+// const cover=(s) => {
+// let sayi=0;
+// let sonuc="";
+// sayi=Math.floor((s/1000))
+// switch (sayi)
+// {
+// case 1: sonuc+= "M"; s = s % 1000; break;
+// case 2: sonuc+= "M";sonuc+= "M" ; s= s%1000; break;
+// case 3: sonuc+= "M";sonuc+= "M" ;sonuc+= "M" ; s= s%1000; break;
+// default: break;
+// }
 
-sayi = Math.floor(s/100);
+// sayi = Math.floor(s/100);
 
-switch (sayi)
-{
-case 1: sonuc+= "C"; s= s%100; break;
-case 2: sonuc+= "C"; sonuc+= "C" ;s= s%100; break;
-case 3: sonuc+= "C"; sonuc+= "C" ;sonuc+= "C" ;s= s%100; break;
-case 4: sonuc+= "C";sonuc+="D"; s= s%100; break;
-case 5: sonuc+= "D"; s= s%100; break;
-case 6: sonuc+= "D";sonuc+= "C" ; s= s%100; break;
-case 7: sonuc+= "D";sonuc+= "C" ;sonuc+= "C" ; s= s%100; break;
-case 8: sonuc+= "D";sonuc+= "C" ;sonuc+= "C" ;sonuc+= "C" ; s= s%100; break;
-case 9: sonuc+= "C";sonuc+= "M" ; s= s%100; break;
-default: break;
-}
+// switch (sayi)
+// {
+// case 1: sonuc+= "C"; s= s%100; break;
+// case 2: sonuc+= "C"; sonuc+= "C" ;s= s%100; break;
+// case 3: sonuc+= "C"; sonuc+= "C" ;sonuc+= "C" ;s= s%100; break;
+// case 4: sonuc+= "C";sonuc+="D"; s= s%100; break;
+// case 5: sonuc+= "D"; s= s%100; break;
+// case 6: sonuc+= "D";sonuc+= "C" ; s= s%100; break;
+// case 7: sonuc+= "D";sonuc+= "C" ;sonuc+= "C" ; s= s%100; break;
+// case 8: sonuc+= "D";sonuc+= "C" ;sonuc+= "C" ;sonuc+= "C" ; s= s%100; break;
+// case 9: sonuc+= "C";sonuc+= "M" ; s= s%100; break;
+// default: break;
+// }
 
-sayi = Math.floor(s / 10);
+// sayi = Math.floor(s / 10);
 
-switch (sayi)
-{
-case 1: sonuc+= "X"; s= s%10; break;
-case 2: sonuc+= "X"; sonuc+="X"; s= s%10; break;
-case 3: sonuc+= "X";sonuc+= "X"; sonuc+= "X"; s= s%10; break;
-case 4: sonuc+= "X"; sonuc+="L"; s= s%10; break;
-case 5: sonuc+= "L"; s= s%10; break;
-case 6: sonuc+= "L"; sonuc+="X"; s= s%10; break;
-case 7: sonuc+= "L";sonuc+= "X"; sonuc+= "X"; s= s%10; break;
-case 8: sonuc+= "L";sonuc+= "X"; sonuc+= "X";sonuc+="X" ; s= s%10; break;
-case 9: sonuc+= "X"; sonuc+="C"; s= s%10; break;
-default: break;
-}
+// switch (sayi)
+// {
+// case 1: sonuc+= "X"; s= s%10; break;
+// case 2: sonuc+= "X"; sonuc+="X"; s= s%10; break;
+// case 3: sonuc+= "X";sonuc+= "X"; sonuc+= "X"; s= s%10; break;
+// case 4: sonuc+= "X"; sonuc+="L"; s= s%10; break;
+// case 5: sonuc+= "L"; s= s%10; break;
+// case 6: sonuc+= "L"; sonuc+="X"; s= s%10; break;
+// case 7: sonuc+= "L";sonuc+= "X"; sonuc+= "X"; s= s%10; break;
+// case 8: sonuc+= "L";sonuc+= "X"; sonuc+= "X";sonuc+="X" ; s= s%10; break;
+// case 9: sonuc+= "X"; sonuc+="C"; s= s%10; break;
+// default: break;
+// }
 
-switch (s)
-{
-case 1: sonuc+= "I"; s= s%10; break;
-case 2: sonuc+= "I";sonuc+= "I" ; s= s%10; break;
-case 3: sonuc+= "I";sonuc+= "I" ;sonuc+= "I" ; s= s%10; break;
-case 4: sonuc+= "I";sonuc+= "V" ; s= s%10; break;
-case 5: sonuc+= "V"; s= s%10; break;
-case 6: sonuc+= "V"; sonuc+= "I" ;s= s%10; break;
-case 7: sonuc+= "V"; sonuc+= "I" ;sonuc+= "I" ;s= s%10; break;
-case 8: sonuc+= "V"; sonuc+= "I" ;sonuc+= "I" ;sonuc+= "I" ;s= s%10; break;
-case 9: sonuc+= "I";sonuc+= "X" ; s= s%10; break;
-default: break;
-}
+// switch (s)
+// {
+// case 1: sonuc+= "I"; s= s%10; break;
+// case 2: sonuc+= "I";sonuc+= "I" ; s= s%10; break;
+// case 3: sonuc+= "I";sonuc+= "I" ;sonuc+= "I" ; s= s%10; break;
+// case 4: sonuc+= "I";sonuc+= "V" ; s= s%10; break;
+// case 5: sonuc+= "V"; s= s%10; break;
+// case 6: sonuc+= "V"; sonuc+= "I" ;s= s%10; break;
+// case 7: sonuc+= "V"; sonuc+= "I" ;sonuc+= "I" ;s= s%10; break;
+// case 8: sonuc+= "V"; sonuc+= "I" ;sonuc+= "I" ;sonuc+= "I" ;s= s%10; break;
+// case 9: sonuc+= "I";sonuc+= "X" ; s= s%10; break;
+// default: break;
+// }
 
-return sonuc;
+// return sonuc;
 
-}
+// }
 
-console.log(cover(1125))
+// console.log(cover(1125))
+//**********************
+// const order=(a,b) => {
+// for(i=0;i<b.length;i++){
+//     a.push(b[i])
+
+// }
+// console.log(a.sort((a,b)=>a-b))
+// }
+
+// order([2,4,8],[3,7,10])
+//***************************************
