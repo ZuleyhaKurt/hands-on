@@ -199,13 +199,28 @@
 //  console.log(result)
 
 //! ******************************
-const reverseWord=(str)=>{
-let newstr1=str.split(" ")
-let newstr2="";
-for(let i=newstr1.lenght - 1;i >= 0; i--){
-        newstr2=newstr2 +" "+ newstr1[i];
+// const reverseWord=(str)=>{
+// let newstr1=str.split(" ")
+// let newstr2="";
+// for(let i=newstr1.lenght - 1;i >= 0; i--){
+//         newstr2=newstr2 +" "+ newstr1[i];
+// }
+// console.log(newstr2)
+
+
+// }
+// const value="seviyorum seni Mustafa"
+// reverseWord(value)
+
+let fullStack ={
+        languages:["js","react","html"],
+        jira:true,
+        github:true,
+        difficulty:8,
 }
-console.log(newstr2)
+let sonuc=""
+for(const item of fullStack["languages"]){
+      sonuc=sonuc + item + ","
+      
 }
-const value="seviyorum seni Mustafa'cım"
-reverseWord(value)
+console.log(sonuc)
