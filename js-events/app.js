@@ -43,3 +43,7 @@ const h1=document.querySelector("#header h1");
         li.style.transform="translateX(-10px)"
     }
   })
+
+  window.onload=function(){
+    document.querySelector("#input").focus();
+  };
