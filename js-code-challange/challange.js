@@ -1,48 +1,48 @@
-// // //! ARRAY SORT
+//! ARRAY SORT
 
-// // const find=(arr,n) => {
-// //     if(n > arr.length){
-// //         console.log("out of range")
-// //     }
-// //     else{
-// //         let newArr=arr.sort(function(a, b){return a-b})
-// //         console.log(newArr)
-// //         console.log(newArr[n-1])
-// //     }
-// // }
-// // let array=[3,9,17,56,88,92,75,6,11,67]
-// // // let number =+prompt("enter a number ");
-// // find(array,2)
+// const find=(arr,n) => {
+//     if(n > arr.length){
+//         console.log("out of range")
+//     }
+//     else{
+//         let newArr=arr.sort(function(a, b){return a-b})
+//         console.log(newArr)
+//         console.log(newArr[n-1])
+//     }
+// }
+// let array=[3,9,17,56,88,92,75,6,11,67]
+// // let number =+prompt("enter a number ");
+// find(array,2)
 
-// // ///************ */
-// // /******* */
-// // //******** */
-// // //! SSN VALİDATOR
-// // // const validator=(ssn)=>{
-// // //     if(ssn.length!=11){
-// // //         console.log("it's not valid")
-// // //     }
-// // //     else if (ssn[3]!="-" && ssn[6]!=="-"){
-// // //         console.log("it's not valid")
-// // //     }
-// // //     else if(ssn.splice(0,3))
-// // // }
+///************ */
+/******* */
+//******** */
+//! SSN VALİDATOR
+// const validator=(ssn)=>{
+//     if(ssn.length!=11){
+//         console.log("it's not valid")
+//     }
+//     else if (ssn[3]!="-" && ssn[6]!=="-"){
+//         console.log("it's not valid")
+//     }
+//     else if(ssn.splice(0,3))
+// }
 
-// // // let ssn="268-26-3556"
-// // // let newSsn=ssn.split("")
-// // // console.log(newSsn)
-// // // validator(newSsn)
-// // // // const first= newSsn.splice(0,3)
-// // // // console.log(first)
-// // // // const second=newSsn.splice(1,2)
-// // // // console.log(second)
-// // // // const third= newSsn.splice(2,5)
-// // // // console.log(third)
-// // // // console.log(newSsn)
+// let ssn="268-26-3556"
+// let newSsn=ssn.split("")
+// console.log(newSsn)
+// validator(newSsn)
+// const first= newSsn.splice(0,3)
+// console.log(first)
+// const second=newSsn.splice(1,2)
+// console.log(second)
+// const third= newSsn.splice(2,5)
+// console.log(third)
+// console.log(newSsn)
 
-// // // 
-// // let arr=["285","12","2565"]
-// // console.log(arr[0].length)
+// 
+// let arr=["285","12","2565"]
+// console.log(arr[0].length)
 
 
 // const validator=(arr)=> {
@@ -212,15 +212,30 @@
 // const value="seviyorum seni Mustafa"
 // reverseWord(value)
 
-let fullStack ={
-        languages:["js","react","html"],
-        jira:true,
-        github:true,
-        difficulty:8,
-}
-let sonuc=""
-for(const item of fullStack["languages"]){
-      sonuc=sonuc + item + ","
+// let fullStack ={
+//         languages:["js","react","html"],
+//         jira:true,
+//         github:true,
+//         difficulty:8,
+// }
+// let sonuc=""
+// for(const item of fullStack["languages"]){
+//       sonuc=sonuc + item + ","
       
-}
-console.log(sonuc)
+// }
+// console.log(sonuc)
+
+// let sayac=0;
+// const text=document.querySelector(".input");
+// document.querySelector(".btn").addEventListener("click",()=>{
+//       let a=(text.value).split("")
+//       console.log(a)
+//       for (let i in a ){
+//             if(a[i]==="a"|| a[i]==="e"|| a[i]==="o"|| a[i]==="ö" || a[i]==="u" || a[i]==="ü"|| a[i]==="ı" || a[i]==="i")
+//             {
+//                   sayac++
+//             }
+//       } 
+//       document.querySelector(".vowels").innerHTML=`there are ${sayac} vowels in text `
+// })
+
